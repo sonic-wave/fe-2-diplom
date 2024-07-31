@@ -1,0 +1,42 @@
+.header {
+    width: 100%;
+    height: 985px;
+    background-image: url('https://s3-alpha-sig.figma.com/img/4d39/3515/552ec05b23bca029a735fc146cf0ebff?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mu1-M0RZwLk8jdZjzKqB8lHrDPqFvNMQRGHoazS4ePILcaNW-sqJIaXtpkiOrBNSHMO5xrHy20coq4~6o6b9MVIc8w-HiXgMEAEMcW1WrkOxVClTjtBtT-8OTfr4g4Clxjp~1FTmzy9O89m73OvvLGzziNGM-G67KK4q385G4IsSJZLZIs9MdZRGA-4OvPTSRElz00cnybkFXZ380kIpmEah7iYFKZCjxG02UokZX7K7d3uwUXyN4UbMwbUhIqEKjsDL~g7X3Jcp8DQLw4cIC5zaviaodKAx1d611hcMKjH6U4WYmqi5bCdMUOvhgsIzX81T8nzXhqlELSp621m4dQ__');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleX(-1);
+    position: relative;
+}
+
+.header-content {
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.header-title {
+    width: 506px;
+    height: 170px;
+    top: 573px;
+    left: 348px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+
+    font-family: 'Roboto';
+    font-size: 72px;
+    font-weight: 100;
+    line-height: 84.38px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.header-title-span {
+    font-weight: 700;
+}
+
+.header-line {
+    background: #FFA800;
+    width: 100%;
+    height: 8px;
+}
