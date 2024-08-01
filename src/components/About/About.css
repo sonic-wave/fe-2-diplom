@@ -1,0 +1,45 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    max-width: 347px;
+    min-height: 41px;
+
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42.19px;
+}
+
+.about-paragraph-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-line {
+    width: 9px;
+    height: 231px;
+
+    margin-right: 19px;
+
+    /* top: 1203px;
+    left: 258px; */
+    background-color: var(--orange-color);
+}
+
+.about-paragraph {
+    max-width: 1320px;
+    min-height: 258px;
+
+    margin-top: 0;
+    margin-bottom: 91px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+}
+
+.about-paragraph-span {
+    font-weight: 700;
+}

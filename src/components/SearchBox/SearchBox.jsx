@@ -1,27 +1,39 @@
 import "./SearchBox.css";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import React, { useState, useRef, forwardRef } from "react";
 
 export const SearchBox = () => {
+  const [showCalendar, setShowCalendar] = useState(false);
+
+
   return (
     <div className="searchBox-container">
       <form className="searchBox-form">
-        <label className='searchBox-formText' htmlFor="from">
-          Направление
+        <label htmlFor="from">
+          <div className="searchBox-formText">Направление</div>
           <div className="searchBox-direction">
-            <input
-              type="text"
-              id="from"
-              className="destinationInput-From searchBox-input"
-              placeholder="Откуда"
-            />
-            <input
-              type="text"
-              className="destinationInput-To searchBox-input"
-              placeholder="Куда"
-            />
+            <div className="inputContainer">
+              <input
+                type="text"
+                id="from"
+                className="destinationInput-From searchBox-input"
+                placeholder="Откуда"
+              />
+              <span className="navigation-icon"></span>
+            </div>
+            <div className="inputContainer">
+              <input
+                type="text"
+                className="destinationInput-To searchBox-input"
+                placeholder="Куда"
+              />
+              <span className="navigation-icon"></span>
+            </div>
           </div>
         </label>
-        <label className='searchBox-formText' htmlFor="departureDate">
-          Дата
+        <label htmlFor="departureDate">
+          <div className="searchBox-formText">Дата</div>
           <div className="searchBox-date">
             <input
               type="date"
@@ -36,8 +48,75 @@ export const SearchBox = () => {
             />
           </div>
         </label>
+        {/* <label htmlFor="departureDate">
+          <div className="searchBox-formText">Дата</div>
+          <div className="searchBox-date">
+            <div className="inputContainer">
+              <input
+                type="text"
+                id="departureDate"
+                className="destinationInput-date searchBox-input"
+                placeholder="ДД/ММ/ГГ"
+              />
+              <span className="date-icon"></span>
+            </div>
+            <div className="inputContainer">
+              <input
+                type="text"
+                className="destinationInput-date searchBox-input"
+                placeholder="ДД/ММ/ГГ"
+              />
+              <span className="date-icon"></span>
+            </div>
+          </div>
+        </label> */}
+        {/* <label htmlFor="departureDate">
+          <div className="searchBox-formText">Дата</div>
+          <div className="searchBox-date">
+            <div className="inputContainer">
+              <input
+                type="text"
+                id="departureDate"
+                className="destinationInput-date searchBox-input"
+                placeholder="ДД/ММ/ГГ"
+              />
+              <span 
+                className="date-icon" 
+                onClick={() => setShowCalendar(!showCalendar)}
+              ></span>
+              {showCalendar && (
+                <DatePicker
+                  selected={null}
+                  onChange={() => {}}
+                  inline
+                  locale="ru"
+                />
+              )}
+            </div>
+            <div className="inputContainer">
+              <input
+                type="text"
+                className="destinationInput-date searchBox-input"
+                placeholder="ДД/ММ/ГГ"
+              />
+              <span 
+                className="date-icon" 
+                onClick={() => setShowCalendar(!showCalendar)}
+              ></span>
+              {showCalendar && (
+                <DatePicker
+                  selected={null}
+                  onChange={() => {}}
+                  inline
+                />
+              )}
+            </div>
+          </div>
+        </label> */}
       </form>
-      <button className='searchBox-btn' type='submit'>Найти билеты</button>
+      <button className="searchBox-btn" type="submit">
+        Найти билеты
+      </button>
     </div>
   );
 };

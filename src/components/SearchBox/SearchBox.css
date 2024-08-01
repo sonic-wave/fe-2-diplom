@@ -10,8 +10,8 @@
     position: relative;
     max-width: 729px;
     min-height: 574px;
-    margin: 347px 0 0 959px;
-    padding: 59px 0 0 21px;
+    /* margin: 347px 0 0 959px; */
+    /* padding: 59px 0 0 21px; */
 }
 
 .searchBox-container::before {
@@ -21,17 +21,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #292929CC; 
-    z-index: -1; 
+    background-color: #292929CC;
+    z-index: -1;
 }
 
 .searchBox-form {
-    width: calc(100% - 21px);
-    /* width: 684px; */
+    /* width: calc(100% - 21px); */
+    width: 684px;
     min-height: 283px;
     display: flex;
     flex-direction: column;
     /* padding: 59px 0 0 21px; */
+    margin: 79px 24px 0 21px;
 }
 
 .searchBox-formText {
@@ -40,6 +41,9 @@
     line-height: 35.16px;
     text-align: left;
     color: #FFF;
+
+    width: 231px;
+    min-height: 43px;
 }
 
 .searchBox-input {
@@ -47,14 +51,104 @@
     min-height: 60px;
     margin-right: 40px;
     box-sizing: border-box;
+
+    position: relative;
+    /* Add this */
+    padding-left: 21px;
+    /* Adjust for placeholder padding */
+    padding-right: 70px;
+    /* Adjust for placeholder padding */
+    padding-top: 19px;
+    /* Adjust for placeholder padding */
+    padding-bottom: 11px;
+    /* Adjust for placeholder padding */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.09px;
+    text-align: left;
+    /* color: #E5E5E5; */
 }
 
 .searchBox-input:nth-child(2n) {
     margin-right: 0;
 }
 
+.searchBox-input::placeholder {
+    width: 231px;
+    height: 30px;
+
+    font-family: 'Roboto';
+
+    color: #E5E5E5;
+}
+
+.inputContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.navigation-icon {
+    position: absolute;
+    left: 280px;
+    top: 13px;
+    width: 30px;
+    height: 33.53px;
+    background: url('../../public/svg/navigation.svg') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+}
+
+.date-icon {
+    position: absolute;
+    left: 280px;
+    top: 13px;
+    width: 30px;
+    height: 33.53px;
+    background: url('../../public/svg/calendar.svg') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.react-datepicker {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    left: 0;
+    z-index: 2;
+}
+
+
 .searchBox-direction,
 .searchBox-date {
     display: flex;
     flex-direction: row;
+}
+
+.searchBox-direction {
+    margin-bottom: 61px;
+}
+
+.searchBox-date {
+    margin-bottom: 92px;
+}
+
+.searchBox-btn {
+    width: 323px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-left: 382px;
+
+    background-color: var(--orange-color);
 }
