@@ -1,0 +1,47 @@
+.footer {
+    min-height: 519px;
+
+    background-color: #2D2B2F;
+}
+
+.contacts-container {
+    max-width: 1246px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #E5E5E5;
+}
+
+.footer-line {
+    border: 1px solid #E5E5E5
+}
+
+.footer-credentials {
+    max-width: 1407px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    color: #E5E5E5;
+}
+
+.footer-logo {
+    min-height: 41px;
+
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42.19px;
+}
+
+.footer-image {
+    width: 36px;
+    height: 36px;
+}
+
+.footer-year {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28.13px;
+}
