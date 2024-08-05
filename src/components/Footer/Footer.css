@@ -19,6 +19,7 @@
 
 .footer-credentials {
     max-width: 1407px;
+    height: 96px;
     display: flex;
     flex-direction: row;
     margin: 0 auto;

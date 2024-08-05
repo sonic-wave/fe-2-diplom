@@ -2,10 +2,13 @@ import "./SearchBox.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import React, { useState, useRef, forwardRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const SearchBox = () => {
-  const [showCalendar, setShowCalendar] = useState(false);
-
+  const navigate = useNavigate();
+  const SubmitHandler = () => {
+    navigate('/searchpage');
+  }
 
   return (
     <div className="searchBox-container">
@@ -114,7 +117,7 @@ export const SearchBox = () => {
           </div>
         </label> */}
       </form>
-      <button className="searchBox-btn" type="submit">
+      <button className="searchBox-btn" type="submit" onClick={SubmitHandler}>
         Найти билеты
       </button>
     </div>

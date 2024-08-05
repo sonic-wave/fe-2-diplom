@@ -1,0 +1,38 @@
+/* .search-header {
+    min-height: 596px;
+    background-image: url('../../public/img/search-bg-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+.search-header-content {
+    width: 100%;
+    height: 100%;
+} */
+
+.search-header {
+    min-height: 596px;
+    position: relative;
+    overflow: hidden; /* добавляем это, чтобы псевдоэлемент не выходил за границы */
+}
+
+.search-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../public/img/search-bg-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.69;
+    z-index: 1;
+}
+
+.search-header-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}

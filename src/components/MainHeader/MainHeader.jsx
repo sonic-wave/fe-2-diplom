@@ -1,14 +1,13 @@
-import "./Header.css";
+import "./MainHeader.css";
 import { Nav } from "../Nav/Nav";
 import { SearchBox } from "../SearchBox/SearchBox";
+import { HeaderLogo } from "../HeaderLogo/HeaderLogo";
 
-export const Header = () => {
+export const MainHeader = () => {
   return (
     <header className="header">
       <div className="header-content">
-        <div className="header-logo-container">
-          <div className="header-logo">Лого</div>
-        </div>
+        <HeaderLogo />
         <Nav></Nav>
         <div className="header-container">
           <h1 className="header-title">

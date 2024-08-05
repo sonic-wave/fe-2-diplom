@@ -27,8 +27,3 @@ body {
 :root {
   --orange-color: #FFA800;
 }
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
