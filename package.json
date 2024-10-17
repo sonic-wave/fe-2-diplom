@@ -1,6 +1,7 @@
 {
   "name": "fe-2-diplom",
   "version": "0.1.0",
+  "homepage": "https://sonic-wave.github.io/fe-2-diplom",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.8",

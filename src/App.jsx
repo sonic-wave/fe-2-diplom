@@ -10,7 +10,7 @@ import SuccessOrderPage from "./pages/SuccessOrderPage/SuccessOrderPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/fe-2-diplom">
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/trains" element={<SelectionTrainPage />} />
