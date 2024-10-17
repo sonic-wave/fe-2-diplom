@@ -15,7 +15,7 @@ const CalendarForm = ({ name, direction }) => {
     } else if (direction === "back" || direction === "to") {
       dispatch(choiceDateTo(date));
     }
-  }, [value, dispatch]);
+  }, [value, dispatch, direction]);
 
   return (
     <Calendar

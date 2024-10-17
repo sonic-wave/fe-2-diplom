@@ -17,10 +17,6 @@ const PassangersPage = () => {
   const navigate = useNavigate();
   const [addComponents, setAddComponents] = useState([]);
 
-  const onClickAddButton = () => {
-    setAddComponents([...addComponents, 1]);
-  };
-
   const onClick = () => {
     navigate("/payment");
   };

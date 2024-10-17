@@ -18,10 +18,10 @@ import locationIcon from "../../img/footer/location.png";
 const Footer = () => {
   const [mail, setMail] = useState("");
   const dispatch = useDispatch();
-  const { open } = useSelector((state) => state.subscribe);
+  // const { open } = useSelector((state) => state.subscribe);
 
   const validateMail = (mail) => {
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var regex = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(mail);
   };
 
@@ -95,10 +95,10 @@ const Footer = () => {
         </div>
         <div className="footer-content bottom">
           <div className="footer-content_block block-bottom">
-            <a href="" className="block-bottom-link logo-link">
+            <a href="#" className="block-bottom-link logo-link">
               <p className="block-bottom-text logo">Лого</p>
             </a>
-            <a href="" className="block-bottom-link arrow-link">
+            <a href="#" className="block-bottom-link arrow-link">
               <div className="block-bottom-arrow"></div>
             </a>
             <p className="block-bottom-text">2018 WEB</p>

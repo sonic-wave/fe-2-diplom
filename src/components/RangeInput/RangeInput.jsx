@@ -53,7 +53,7 @@ const RangeInput = ({ min, max }) => {
     }
     slideOne();
     slideTwo();
-  }, [range]);
+  }, [range, min, max]);
 
   return (
     <div className="range-container">
