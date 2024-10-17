@@ -19,11 +19,13 @@ export const getLastRoutes = createSlice({
     extraReducers: (builder) => {
         builder.addCase(getRoutes.pending, (state) => {
             state.loading =  true;
-        }),
+        });
+        
         builder.addCase(getRoutes.fulfilled, (state, { payload }) => {
             state.loading = false;
             state.items = payload
-        }),
+        });
+        
         builder.addCase(getRoutes.rejected, (state, { error }) => {
             state.loading = false;
             state.error = error

@@ -25,11 +25,13 @@ export const getCitySlice = createSlice({
     extraReducers: (builder) => {
         builder.addCase(getCity.pending, (state) => {
             state.loading =  true;
-        }),
+        }); 
+
         builder.addCase(getCity.fulfilled, (state, { payload }) => {
             state.loading = false;
             state.items = payload
-        }),
+        });
+        
         builder.addCase(getCity.rejected, (state, { error }) => {
             state.loading = false;
             state.error = error

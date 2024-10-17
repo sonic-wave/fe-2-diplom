@@ -44,12 +44,14 @@ const getTrainSeatSlice = createSlice({
     extraReducers: (builder) => {
         builder.addCase(getSeat.pending, (state) => {
             state.loading =  true;
-        }),
+        });
+
         builder.addCase(getSeat.fulfilled, (state, { payload } ) => {
             const { data, direction } = payload;
             state.loading = false;
             state.seat[direction] = data;
-        }),
+        });
+        
         builder.addCase(getSeat.rejected, (state, { error }) => {
             state.loading = false;
             state.error = error
