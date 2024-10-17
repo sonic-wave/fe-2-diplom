@@ -1,0 +1,100 @@
+.range-container {
+    margin: 0 auto;
+}
+
+.timeSlider {
+    position: relative;
+    width: 300px;
+    height: 10px;
+    margin: 0 5px 15px 0;
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.timeSlider-track {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 8px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+    -moz-appearance: none;
+    height: 5px;
+}
+
+input[type="range"]::-ms-track {
+    appearance: none;
+    height: 5px;
+}
+
+.timeSlider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    margin-top: -7px;
+    background-color: #fff;
+    cursor: pointer;
+    pointer-events: auto;
+    border-radius: 50%;
+}
+
+.timeSlider input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    margin-top: -7px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #3264fe;
+    pointer-events: auto;
+    border: none;
+}
+
+.timeSlider input[type="range"]::-ms-thumb {
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    margin-top: -7px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #3264fe;
+    pointer-events: auto;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background-color: #ffffff;
+    border: 1px solid #3264fe;
+}
+
+.timeValues {
+    display: flex;
+    justify-content: space-between;
+    width: 295px;
+    margin-left: 4px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E5E5E5;
+}

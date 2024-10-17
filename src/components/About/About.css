@@ -1,0 +1,50 @@
+.section-about {
+    position: relative;
+
+    margin-bottom: 122px;
+    padding-left: 258px;
+}
+
+.about-title {
+    margin-bottom: 30px;
+
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.about-text {
+    margin-bottom: 26px;
+
+    font-weight: 400;
+    font-size: 24px;
+    color: #292929;
+}
+
+.about-text:first-child {
+    margin: -3px 0 27px 0;
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-content {
+    max-width: 1168px;
+
+    padding-left: 28px;
+}
+
+.about-content::before {
+    content: '';
+
+    position: absolute;
+    left: 258px;
+    bottom: -8px;
+
+    width: 9px;
+    height: 231px;
+
+    background-color: #FFA800;
+}
