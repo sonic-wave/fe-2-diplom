@@ -3,7 +3,7 @@ import "./Footer.css";
 import Item from "./Item";
 import Social from "./Social";
 import Popup from "../Popup/Popup";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   changePopup,
   getSubscribe,
@@ -95,10 +95,10 @@ const Footer = () => {
         </div>
         <div className="footer-content bottom">
           <div className="footer-content_block block-bottom">
-            <a href="#" className="block-bottom-link logo-link">
+            <a href="https://netology.ru/" className="block-bottom-link logo-link">
               <p className="block-bottom-text logo">Лого</p>
             </a>
-            <a href="#" className="block-bottom-link arrow-link">
+            <a href="https://netology.ru/" className="block-bottom-link arrow-link">
               <div className="block-bottom-arrow"></div>
             </a>
             <p className="block-bottom-text">2018 WEB</p>

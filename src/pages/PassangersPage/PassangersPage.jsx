@@ -15,7 +15,7 @@ const PassangersPage = () => {
   const { departure, arrival } = useSelector((state) => state.seats.passanger);
   const { passanger } = useSelector((state) => state.passanger);
   const navigate = useNavigate();
-  const [addComponents, setAddComponents] = useState([]);
+  // const [addComponents, setAddComponents] = useState([]);
 
   const onClick = () => {
     navigate("/payment");
@@ -43,9 +43,9 @@ const PassangersPage = () => {
           )}
           {arrival.adult > 0 && <PassangerCard name={"adult"} show />}
           {arrival.child > 0 && <PassangerCard name={"child"} show />}
-          {addComponents.map((el) => (
+          {/* {addComponents.map((el) => (
             <PassangerCard show />
-          ))}
+          ))} */}
           <div className="add-passanger">
             <button className="add-passanger-button">Добавить пассажира</button>
           </div>
